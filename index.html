@@ -1,11 +1,116 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <title>Ali Elfatih</title>
-    <link rel="stylesheet" href="style.css" type="css"/>
-  </head>
-  <body>
-    Hello World
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfilo</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div id="navbar">
+    <div class="navleft"><a  id="profile-link" href="https://freecodecamp.com/alielfatih" target="_blank">My Portfilo</a></div>
+    <div class="navright">
+      <ul>
+        <li><a href="#welcome-section">About me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Works</a></li> 
+        <li><a href="#contact">Contacts</a></li> 
+      </ul>
+    </div>
+  </div>
+  <main id="main">
+    <div id="welcome-section">
+      <h1>Hello I'm Ali</h1>
+      <p>I'm  WEB DEVELOPER </p>
+      <div id="mains"></div>
+    </div>
+    <div id="skills">
+      <H2>Skills</H2>
+      <div class="skill">
+        <h3>HTML</h3>
+        <progress min="0" value="70" max="100"> 70% </progress>
+      </div>
+      <div class="skill">
+        <h3>JavaScript</h3> 
+        <progress max="100" value="60"> 60% </progress>
+      </div>
+      <div class="skill">
+        <h3>CSS</h3>
+        <progress max="100" value="60"> 60% </progress>
+      </div>
+      <div class="skill">
+        <h3>Python</h3> 
+        <progress max="100" value="51.4"> 51.4% </progress>
+      </div>
+      <div class="skill">
+        <h3>Django</h3>
+        <progress max="100" value="65"> 65% </progress>
+      </div>
+    </div>
+    <div id="projects">
+      <div class="hiddenDiv"></div>
+      <h2>MY Works</h2>
+      <div class="projContainer" id="project1">
+        <a href="https://codepen.io/alielfatih/pen/LYeOWbM" class="project-tile">
+          <img src="https://codepen.io/alielfatih/pen/LYeOWbM/image/large.png" alt="Tribute Page">
+        </a>
+        <h3>Tribute Page </h3>
+      </div>
+      <div class="projContainer" id="project2">
+        <a href="https://codepen.io/alielfatih/pen/jOYpRgJ" class="project-tile">
+          <img src="https://codepen.io/alielfatih/pen/jOYpRgJ/image/large.png" alt="AEA Survey Form">
+        </a>
+        <h3>AEA Survey Form</h3>
+      </div>
+      <div class="projContainer" id="project3">
+        <a href="https://codepen.io/alielfatih/pen/wvpYVro" class="project-tile">
+          <img src="https://codepen.io/alielfatih/pen/wvpYVro/image/large.png" alt="Landing Page">
+        </a>
+        <h3>Landing Page</h3>
+      </div>
+      <div class="projContainer" id="project4">
+        <a href="https://codepen.io/alielfatih/pen/MWrzQjz" class="project-tile">
+          <img src="https://codepen.io/alielfatih/pen/MWrzQjz/image/large.png" alt="Python Documentation">
+        </a>
+        <h3>Python Documentation</h3>
+      </div>
+    </div>
+    <div id="contact">
+      <h2>Contact</h2>
+      <div id="contactDiv">
+        <a href="https://github.com/alielfatih">
+          <div id="github" class="contact"></div>
+        </a>
+        
+        <a href="https://linkedin.com/in/alielfatih">
+          <div id="linkedin" class="contact"></div>
+        </a>
+
+        <a href="https://freecodecamp.com/alielfatih">
+          <div id="fcc" class="contact"></div>
+        </a>
+
+        <a href="https://twitter.com/DrAliElfatih">
+          <div id="twitter" class="contact"></div>
+        </a>
+
+      </div>
+    </div>
+
+
+    <script>
+
+      const root = document.querySelector(':root'); 
+      const navBar = document.getElementById('navbar'); 
+      let navSize = navBar.offsetHeight;
+      root.style.setProperty('--welSize',`${navSize}px`);
+      window.onresize = ()=> {
+        navSize = navBar.offsetHeight;
+        root.style.setProperty('--welSize',`${navSize}px`);
+      }
+    </script>
+  </main>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
 </html>
