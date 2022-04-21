@@ -23,7 +23,6 @@
     <div id="welcome-section">
       <h1>Hello I'm Ali</h1>
       <p>I'm  WEB DEVELOPER </p>
-      <div id="mains"></div>
     </div>
     <div id="skills">
       <H2>Skills</H2>
@@ -105,9 +104,11 @@
       const navBar = document.getElementById('navbar'); 
       let navSize = navBar.offsetHeight;
       root.style.setProperty('--welSize',`${navSize}px`);
+      root.style.setProperty('--welHeight', `${window.innerHeight}px`);
       window.onresize = ()=> {
         navSize = navBar.offsetHeight;
         root.style.setProperty('--welSize',`${navSize}px`);
+        root.style.setProperty('--welHeight', window.innerHeight);
       }
     </script>
   </main>
