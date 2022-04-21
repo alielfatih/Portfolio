@@ -1,27 +1,26 @@
- * {
-  box-sizing: border-box !important;
-  padding: 0;
-  margin: 0;
+* {
+  box-sizing: border-box;
   scroll-behavior: smooth;
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
 body {
   background: linear-gradient(45deg, transparent, rgb(44, 44, 83)), #6779c7;
   color: #fff;
-  min-height: 100vh;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  height: 100%;
 }
-a {
-  text-decoration: none;
-}
-/* ---------- navbar ----------- */
+a {text-decoration: none;}
+#navbar  li {list-style: none;}
+/* ------------------------- navbar -------------------------  */
 #navbar {
-  position: sticky;
-  top: 0;
-  left: 0;
-  padding: 1em; 
   display: flex;
   justify-content: space-between;
   background: rgb(56, 56, 160);
+  padding: 1em; 
+  position: sticky;
+  top: 0;
+  left: 0;
 }
 .navleft {
   font-size: large;
@@ -36,30 +35,28 @@ a {
   align-items: center;
   justify-content: space-evenly;
 }
-#navbar  li {
-  list-style: none;
-}
 #navbar a,#navbar a:visited   {
   color: #fff;
 }
 #navbar a:hover {
   color: rgb(154, 159, 163);
 }
-/*  --------- welcome section */
+
+/* ------------------------- wel section ------------------------- */
 #welcome-section { 
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  height: 100vh;
-  width: 100%;
+  justify-content: center;
+  height: var(--welHeight); 
 }
+
 #welcome-section h1 {
-  font-size:  55px;
+  /* font-size:  55px; */
 }
 #welcome-section p {
-  font-weight:  900; 
-  padding: 10px;
+  /* font-weight:  900; */ 
+  /* padding: 10px; */
 }
 
 /* ---------skills -------------- */
