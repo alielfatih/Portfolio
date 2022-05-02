@@ -99,12 +99,13 @@
 
 
     <script>
-
-      const root = document.querySelector(':root'); 
-      const navBar = document.getElementById('navbar'); 
-      let navSize = navBar.offsetHeight;
-      root.style.setProperty('--welSize',`${navSize}px`);
-      root.style.setProperty('--welHeight', `${window.innerHeight}px`);
+      document.addEventListener("DOMContentLoaded",()=>{
+        const root = document.querySelector(':root'); 
+        const navBar = document.getElementById('navbar'); 
+        let navSize = navBar.offsetHeight;
+        root.style.setProperty('--welSize',`${navSize}px`);
+        root.style.setProperty('--welHeight', `${window.innerHeight}px`);
+      });
       window.onresize = ()=> {
         navSize = navBar.offsetHeight;
         root.style.setProperty('--welSize',`${navSize}px`);
