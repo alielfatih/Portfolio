@@ -2,7 +2,6 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   margin: 0;
-  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 body {
@@ -44,11 +43,11 @@ a {text-decoration: none;}
 
 /* ------------------------- wel section ------------------------- */
 #welcome-section { 
-  display: flex;
+  display: flex; 
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: var(--welHeight); 
 }
 
 #welcome-section h1 {
